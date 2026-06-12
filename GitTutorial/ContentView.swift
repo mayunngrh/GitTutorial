@@ -9,23 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house.fill")
-                }
-
-            // Add your tab here! Follow the pattern above:
-            // YourNameView()
-            //     .tabItem {
-            //         Label("Your Name", systemImage: "person.fill")
-            //     }
-        }
-    }
-}
-
-struct HomeView: View {
-    var body: some View {
         VStack(spacing: 16) {
             Image(systemName: "swift")
                 .font(.system(size: 60))
