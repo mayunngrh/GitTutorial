@@ -15,6 +15,11 @@ struct ContentView: View {
                     Label("Home", systemImage: "house.fill")
                 }
 
+            SuYeonView()
+                .tabItem {
+                    Label("SuYeon", systemImage: "person.fill")
+                }
+
             // Add your tab here! Follow the pattern above:
             // YourNameView()
             //     .tabItem {
@@ -39,6 +44,21 @@ struct HomeView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
+        }
+        .padding()
+    }
+}
+
+struct SuYeonView: View {
+    var body: some View {
+        VStack(spacing: 16) {
+            Image(systemName: "star.fill")
+                .font(.system(size: 60))
+                .foregroundStyle(.yellow)
+
+            Text("Hi, I'm SuYeon!")
+                .font(.largeTitle)
+                .bold()
         }
         .padding()
     }
